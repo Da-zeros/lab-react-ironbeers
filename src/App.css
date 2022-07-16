@@ -36,3 +36,81 @@
     transform: rotate(360deg);
   }
 }
+
+html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeContainer{
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  box-shadow: 5px 5px 15px 5px rgba(152,152,152,0.87);
+}
+
+.diferentGrid{
+  padding: 0 !important; 
+  grid-template-rows: 0.5fr 0.5fr auto;
+}
+
+.homeIcon{
+  color: #ffffff;
+  text-decoration: none;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #38c2f7;
+}
+
+.homeIcon i:hover{
+  transform: scale(0.9)
+}
+
+.searchBar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.beerContent{
+  color: black;
+  text-decoration: none;
+  padding: 20px 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  
+}
+
+.beerContent img{
+ width: 100px;
+ max-height: 300px;
+}
+
+.beerContent_bolder{
+  font-weight: bolder;
+  color: black;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.lista{
+  margin: 0;
+  padding: 0;
+  border-bottom: solid 1px black;
+}
+.beerContent_tags {
+  margin-left: 50px;
+}
+.beerContent_tags h3{
+  font-size: 40px;
+}
+.beerContent_tags p{
+  color: grey;
+}
