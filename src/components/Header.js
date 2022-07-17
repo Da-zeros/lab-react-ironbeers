@@ -6,12 +6,10 @@ import { Link } from 'react-router-dom'
 const Header = () => {
     
   return (
-    <div className="Header">
         
-        <Link to="/">
-          <i class="fa-solid fa-house-chimney"></i>
+        <Link className="homeIcon" to="/">
+          <i class="fa-solid fa-house-chimney fa-5x"></i>
         </Link>
-    </div>
   )
 }
 

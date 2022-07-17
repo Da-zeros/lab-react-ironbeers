@@ -38,19 +38,21 @@
 }
 
 html{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.homeContainer{
-  padding: 20px;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  width: 80%;
+  margin: 0 auto;
   box-shadow: 5px 5px 15px 5px rgba(152,152,152,0.87);
 }
+.homeContainer{
+  padding: 20px ;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
 
-.diferentGrid{
-  padding: 0 !important; 
+.homeContainer img{
+  width: 100%;
+}
+
+.modified{
   grid-template-rows: 0.5fr 0.5fr auto;
 }
 
@@ -113,4 +115,82 @@ ul{
 }
 .beerContent_tags p{
   color: grey;
+}
+
+.detailContainer{
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 0.5fr auto;
+  box-shadow: 5px 5px 15px 5px rgba(152,152,152,0.87);
+}
+.cardDetail{
+  display: flex;
+  flex-direction:column;
+  padding: 50px;
+}
+
+.cardDetail img{
+  align-self: center;
+  width: 200px;
+  max-height: 400px;
+}
+.cardDetail-cont{
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.cardDetail-cont_left h3{
+  font-size: 2em;
+}
+
+.cardDetail-cont_rigthBig{
+  font-size: 2em;
+  color: grey;
+}
+.biger{
+  font-size: 1.5em;
+}
+
+.grey{
+  color: grey;
+  font-size: 1.6em;
+}
+
+.mainContainer{
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 80%;
+}
+
+.containerRandom{
+  padding: 50px;
+}
+
+.containerRandom img{
+  align-self: center;
+  width: 200px;
+  max-height: 400px;
+}
+
+.form{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.form-goup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form button{
+  
 }

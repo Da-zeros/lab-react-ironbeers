@@ -22,16 +22,19 @@ const RandomBeer = () => {
   })
   return (
     <>
-    <Header/>
-    <div className="cardDetail">
-        <img src={randomBeer.image_url}/>
-        <h3>{randomBeer.name}</h3>
-        <p>{randomBeer.tagline}</p>
-        <p>{randomBeer.first_brewed}</p>
-        <p>{randomBeer.attenuation_level}</p>
-        <p>{randomBeer.description}</p>
-        <p>{randomBeer.contributed_by}</p>
-    </div>
+    
+      <Header/>
+      <div className="containerRandom">
+          <img src={randomBeer.image_url}/>
+          <h3>{randomBeer.name}</h3>
+          <p>{randomBeer.tagline}</p>
+          <p>{randomBeer.first_brewed}</p>
+          <p>{randomBeer.attenuation_level}</p>
+          <p>{randomBeer.description}</p>
+          <p>{randomBeer.contributed_by}</p>
+      </div>
+    
+    
     </>)
 }
 

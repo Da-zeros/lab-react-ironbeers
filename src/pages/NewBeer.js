@@ -3,6 +3,7 @@ import { Link, useNavigate} from 'react-router-dom'
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from 'axios';
+import Header from '../components/Header'
 
 
 const NewBeer = () => {
@@ -43,9 +44,7 @@ const NewBeer = () => {
     
   return (
     <>
-     <Link to="/">
-      <i className="fa-solid fa-house-chimney"></i>
-    </Link>
+    <Header />
     <form className="form" onSubmit={handleSubmit}>
       <div className="form-goup">
         <label>Name</label>
@@ -110,7 +109,7 @@ const NewBeer = () => {
           value={values.contributed_by }
           placeholder="Contributed"/>
           {errors.contributed_by? errors.contributed_by : null}
-  </div>
+      </div>
       <button type="submit">ADD NEW</button>
 
       

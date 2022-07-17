@@ -24,10 +24,8 @@ const Beers = () => {
   },[query])
   
   return (
-    <div className="homeContainer diferentGrid">
-      <Link className="homeIcon"to="/">
-        <i className="fa-solid fa-house-chimney fa-5x"></i>
-      </Link>
+    <>
+      <Header/>
      <div className="searchBar">
         <p>Looking for a special one? search it!</p>
         <input
@@ -56,7 +54,7 @@ const Beers = () => {
           )
       }
     </ul>
-    </div>
+    </>
   )
 }
 
